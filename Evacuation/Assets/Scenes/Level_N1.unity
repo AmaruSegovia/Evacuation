@@ -14146,6 +14146,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camara: {fileID: 1481904013}
   smoothSpeed: 5
+  titileoDuracion: 2
+  titileoFrecuenciaMin: 0.05
+  titileoFrecuenciaMax: 0.2
 --- !u!114 &199065373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14183,9 +14186,9 @@ MonoBehaviour:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 16.4
-  m_PointLightOuterAngle: 75
+  m_PointLightOuterAngle: 70
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 6.8
+  m_PointLightOuterRadius: 6
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -14229,9 +14232,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c4c5a2b85f6ac644a47255ffa9d79b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  acceleration: 30
-  deceleration: 30
+  speed: 2.5
+  acceleration: 25
+  deceleration: 25
   rb: {fileID: 289714442}
 --- !u!212 &289714439
 SpriteRenderer:
@@ -14395,6 +14398,90 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &331160007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 331160009}
+  - component: {fileID: 331160008}
+  m_Layer: 0
+  m_Name: New Piskel-2.png
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &331160008
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331160007}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 6ecf9bba944d23642ba10a5a63d8ddcb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &331160009
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331160007}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.44, y: -4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &426086370
 GameObject:
   m_ObjectHideFlags: 0
@@ -15122,7 +15209,7 @@ Camera:
   far clip plane: 1000
   field of view: 75.5
   orthographic: 1
-  orthographic size: 3.92416
+  orthographic size: 3.42487
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -15639,7 +15726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 1781422058}
-  transitionDuration: 0.2
+  transitionDuration: 0.5
 --- !u!19719996 &1781422060
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -15832,7 +15919,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 5
+  m_PointLightOuterRadius: 3
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -15853,3 +15940,4 @@ SceneRoots:
   - {fileID: 512870333}
   - {fileID: 289714440}
   - {fileID: 1516084865}
+  - {fileID: 331160009}
