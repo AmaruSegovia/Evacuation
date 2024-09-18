@@ -4,19 +4,36 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target;  // El jugador
+    private Transform target;  // El jugador
     public float smoothSpeed = 0.125f;
     public Vector3 offset;
 
+    void Start()
+    {
+        // Busca el objeto del jugador con la etiqueta
+        GameObject playerObject = GameObject.FindWithTag("Player");
+        if (playerObject != null)
+        {
+            target = playerObject.transform;
+            Debug.Log("Target asignado: " + target.name);
+        }
+        else
+        {
+            Debug.LogWarning("No se encontro un objeto con Tag 'Player'");
+        }
+    }
+
     void LateUpdate()
     {
-        // Calcula la posición deseada solo en X e Y
-        Vector3 desiredPosition = new Vector3(target.position.x + offset.x, target.position.y + offset.y, transform.position.z);
+        if (target != null){ 
+            // Calcula la posiciï¿½n deseada solo en X e Y
+            Vector3 desiredPosition = new Vector3(target.position.x + offset.x, target.position.y + offset.y, transform.position.z);
 
-        // Interpolación suave entre la posición actual y la deseada
-        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+            // Interpolaciï¿½n suave entre la posiciï¿½n actual y la deseada
+            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
 
-        // Aplicar la posición suavizada a la cámara
-        transform.position = smoothedPosition;
+            // Aplicar la posiciï¿½n suavizada a la cï¿½mara
+            transform.position = smoothedPosition;
+        }
     }
 }

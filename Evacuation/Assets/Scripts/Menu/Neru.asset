@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 268d6cdf6f102a8469ac9b7b2d1cc391, type: 3}
+  m_Name: Neru
+  m_EditorClassIdentifier: 
+  characterJugable: {fileID: 7860434312187819259, guid: 26b706088e1439748a2afb2d3eabae3d, type: 3}
+  imagen: {fileID: 80299887, guid: 4c25e85c9a2c64942926e402f0b480d1, type: 3}
+  characterName: Neru OuO
+  description: "- Dormir\n- Lento\n- Rapida curaci\xF3n"
