@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 268d6cdf6f102a8469ac9b7b2d1cc391, type: 3}
+  m_Name: Azul
+  m_EditorClassIdentifier: 
+  characterJugable: {fileID: 6447368374182407307, guid: 9e32662759dcb174e8596448faa78558, type: 3}
+  imagen: {fileID: -1208338555, guid: 4b221b9b4f0c9624994457fdf801aa3f, type: 3}
+  characterName: Azul
+  description: '- Gatitos
+
+    - Buen disparo
+
+    - Gatitos x2 c:'
