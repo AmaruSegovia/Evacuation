@@ -22,6 +22,19 @@ public class CharacterSelector : MonoBehaviour
         UpdateCharacterDisplay();
     }
 
+    void Update(){
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)){
+            AnteriorCharacter();
+        }
+        else if(Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)){
+            SiguienteCharacter();
+        }
+        else if(Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space)){
+            StartGame();
+        }
+    }
+
     private void UpdateCharacterDisplay()
     {
         PlayerPrefs.SetInt("SelectedCharacterIndex", index);

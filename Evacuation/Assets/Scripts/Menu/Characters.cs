@@ -7,7 +7,7 @@ using UnityEngine;
 public class Characters : ScriptableObject
 {
     public GameObject characterJugable;
-    public Sprite imagen;
+    public Sprite imagen;               // Imagen que se mostrara en la UI
     public string characterName;
     
     [TextArea(3, 5)]
