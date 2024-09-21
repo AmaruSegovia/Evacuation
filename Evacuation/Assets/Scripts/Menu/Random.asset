@@ -10,13 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 268d6cdf6f102a8469ac9b7b2d1cc391, type: 3}
-  m_Name: Cristian
+  m_Name: Random
   m_EditorClassIdentifier: 
-  characterJugable: {fileID: 6697093971686349779, guid: e41e2d38c1ceed74a8df85dbd14c4ecf, type: 3}
-  imagen: {fileID: -1231158398, guid: 988d8ac53d7ef144c8f3ccb860a75097, type: 3}
-  characterName: Cristian
-  description: '- Futuro JTP
-
-    - Processing
-
-    - Perritos salchichas c:'
+  characterJugable: {fileID: 0}
+  imagen: {fileID: 1364332583, guid: 4ab7d4a7fe26fe0489f93dbcb7bc3df5, type: 3}
+  characterName: Random
+  description: '- Aleatorio'

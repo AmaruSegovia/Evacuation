@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1368,8 +1368,8 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1484,8 +1484,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characters:
+  - {fileID: 11400000, guid: c4af1991a57f8a3429e368a9dcbc3ba9, type: 2}
+  - {fileID: 11400000, guid: 170a5538234f5b14098fef0837ec94ba, type: 2}
   - {fileID: 11400000, guid: 57ae2f14c0bce6647b33dbbed93fbd0a, type: 2}
+  - {fileID: 11400000, guid: 2d568a4a3098e2f4a8d0190ca298d5df, type: 2}
   - {fileID: 11400000, guid: 4fdfbc0fb9099db459c894d4da2c6158, type: 2}
+  - {fileID: 11400000, guid: d89345a1f8e3c7042ab0d1de491e9749, type: 2}
 --- !u!1 &1961096100
 GameObject:
   m_ObjectHideFlags: 0

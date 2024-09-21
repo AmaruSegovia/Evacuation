@@ -56,7 +56,10 @@ public class CharacterSelector : MonoBehaviour
 
     public void StartGame()
     {
-        //
+        if(nombre.text == "Random"){
+            Debug.Log("Personaje aleatorio");
+        }
+        //Carga la siguiente escena
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
 }
