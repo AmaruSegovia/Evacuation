@@ -48,7 +48,7 @@ MonoBehaviour:
   m_ComponentVersion: 1
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.2
+  m_FalloffIntensity: 0.28
   m_Color: {r: 0.9795101, g: 0.9811321, b: 0.7913849, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
@@ -69,10 +69,10 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 16.4
-  m_PointLightOuterAngle: 70
+  m_PointLightInnerAngle: 0
+  m_PointLightOuterAngle: 70.00003
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 6
+  m_PointLightOuterRadius: 5.8
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -96,9 +96,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smoothSpeed: 5
-  titileoDuracion: 2
-  titileoFrecuenciaMin: 0.05
-  titileoFrecuenciaMax: 0.2
 --- !u!1 &3674140181180705287
 GameObject:
   m_ObjectHideFlags: 0

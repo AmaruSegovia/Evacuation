@@ -6,6 +6,8 @@ public class TilemapTransparency : MonoBehaviour
 {
     [SerializeField] private Tilemap tilemap;
     [SerializeField] private float transitionDuration = 1.0f;
+    [SerializeField] private int numberLayer = 2;
+    [SerializeField] private int newNumberLayer = 3;
     private Material tilemapMaterial;
     private Color originalColor;
     private Color transparentColor;
@@ -26,7 +28,7 @@ public class TilemapTransparency : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            tilemapRenderer.sortingOrder = 3;
+            tilemapRenderer.sortingOrder = newNumberLayer;
             // Si hay una transición en curso, detenerla antes de iniciar una nueva
             if (activeTransition != null)
                 StopCoroutine(activeTransition);
@@ -39,7 +41,7 @@ public class TilemapTransparency : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            tilemapRenderer.sortingOrder = 2;
+            tilemapRenderer.sortingOrder = numberLayer;
             // Si hay una transición en curso, detenerla antes de iniciar una nueva
             if (activeTransition != null)
                 StopCoroutine(activeTransition);
