@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4959034794789363811}
   - component: {fileID: 4662219064195530512}
   - component: {fileID: 5068166402666755372}
+  - component: {fileID: 6454495845211329407}
   m_Layer: 0
   m_Name: Maru
   m_TagString: Player
@@ -199,6 +200,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6454495845211329407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047649514255109664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4757ba5975de04a99d3ea7c3bb75e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2849971894615677155
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,9 +308,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smoothSpeed: 5
-  titileoDuracion: 2
-  titileoFrecuenciaMin: 0.05
-  titileoFrecuenciaMax: 0.2
 --- !u!1 &8202779894371615951
 GameObject:
   m_ObjectHideFlags: 0

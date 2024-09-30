@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 955306589054544625}
   - component: {fileID: 657646623852787074}
   - component: {fileID: 1136692620732547006}
+  - component: {fileID: 3917267170105580410}
   m_Layer: 0
   m_Name: Nacho
   m_TagString: Player
@@ -281,6 +282,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3917267170105580410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5123431962611942578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4757ba5975de04a99d3ea7c3bb75e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7935003626324185713
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,6 +390,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smoothSpeed: 5
-  titileoDuracion: 2
-  titileoFrecuenciaMin: 0.05
-  titileoFrecuenciaMax: 0.2
