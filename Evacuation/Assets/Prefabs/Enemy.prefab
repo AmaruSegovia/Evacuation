@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8242522324965428426}
   - component: {fileID: 8712940374274577678}
   - component: {fileID: 2149107178008169019}
+  - component: {fileID: 124116661557884778}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -79,7 +80,7 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   canMove: 1
-  maxSpeed: 3
+  maxSpeed: 1.5
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -119,6 +120,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
+--- !u!50 &124116661557884778
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817694380753036095}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &2667630990495565323
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,7 +157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 636372609855742007}
   - component: {fileID: 6058916292169589587}
-  - component: {fileID: 625585822525186823}
+  - component: {fileID: 1468550116675011624}
   m_Layer: 0
   m_Name: Zombi
   m_TagString: Untagged
@@ -192,7 +220,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 6ecf9bba944d23642ba10a5a63d8ddcb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -204,51 +232,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &625585822525186823
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 4787090172715131177, guid: 2aea86268761a99449cf788006b06dcc, type: 3}
-  m_PrefabInstance: {fileID: 4651404772810324550}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2667630990495565323}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.0019970536, y: -0.011982262}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7004434, y: 0.9760355}
-  m_EdgeRadius: 0
 --- !u!1001 &4651404772810324550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -261,6 +244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombi
       objectReference: {fileID: 0}
+    - target: {fileID: 2859174802302074622, guid: 2aea86268761a99449cf788006b06dcc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4787090172715131177, guid: 2aea86268761a99449cf788006b06dcc, type: 3}
       propertyPath: m_Size.x
       value: 0.7004434
@@ -268,6 +255,10 @@ PrefabInstance:
     - target: {fileID: 4787090172715131177, guid: 2aea86268761a99449cf788006b06dcc, type: 3}
       propertyPath: m_Size.y
       value: 0.9760355
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787090172715131177, guid: 2aea86268761a99449cf788006b06dcc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4787090172715131177, guid: 2aea86268761a99449cf788006b06dcc, type: 3}
       propertyPath: m_Offset.x
@@ -321,8 +312,47 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1629903546267562757, guid: 2aea86268761a99449cf788006b06dcc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1468550116675011624}
   m_SourcePrefab: {fileID: 100100000, guid: 2aea86268761a99449cf788006b06dcc, type: 3}
+--- !u!58 &1468550116675011624
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2667630990495565323}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.3}
+  serializedVersion: 2
+  m_Radius: 0.2
