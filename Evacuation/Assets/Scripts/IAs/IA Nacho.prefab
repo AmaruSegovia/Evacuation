@@ -10,11 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2001362035820753221}
   - component: {fileID: 2004673753167902731}
+  - component: {fileID: -1921307241565699230}
   - component: {fileID: 7877292411616493824}
   - component: {fileID: 2818482794126051017}
-  - component: {fileID: -447684746985225742}
+  - component: {fileID: 8160895279492775589}
   m_Layer: 0
-  m_Name: IA Azul
+  m_Name: IA Nacho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,6 +65,25 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
+--- !u!114 &-1921307241565699230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4685089087015444984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7a32aa02733ba46a124041be1da2c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcData: {fileID: 11400000, guid: 8000bf2b9c6c1d647866349c2df7b72f, type: 2}
+  numeroNPC: 0
+  offsets:
+  - {x: 0, y: 10, z: 0}
+  - {x: 0, y: -10, z: 0}
+  - {x: -10, y: 0, z: 0}
+  - {x: 10, y: 0, z: 0}
 --- !u!114 &7877292411616493824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
---- !u!50 &-447684746985225742
+--- !u!50 &8160895279492775589
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -135,7 +155,7 @@ Rigidbody2D:
   m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -222,7 +242,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1208338555, guid: 4b221b9b4f0c9624994457fdf801aa3f, type: 3}
+  m_Sprite: {fileID: 882196353, guid: ab6ddd7321c4ec345a07b316f39dca59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -278,7 +298,7 @@ Animator:
   m_GameObject: {fileID: 7701553187331228113}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e8410fdd1205c9640bbf3702a698cc9e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 446cc0c5c68635b49b8b5b026b47d65c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

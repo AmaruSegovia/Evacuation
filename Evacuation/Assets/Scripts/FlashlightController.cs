@@ -9,6 +9,7 @@ public class FlashlightController : MonoBehaviour
     [SerializeField] private float smoothSpeed = 5.0f;  // Velocidad de suavizado
     private Light2D linternaLuz;  // Referencia al componente Light2D
     private bool linternaEncendida = true;  // Estado de la linterna
+
     void Start()
     {
         camara = Camera.main;
@@ -26,6 +27,7 @@ public class FlashlightController : MonoBehaviour
             linternaEncendida = !linternaEncendida;
             linternaLuz.enabled = linternaEncendida;  // Encender o apagar la luz
         }
+
 
         // Solo rotar la linterna si está encendida
         if (linternaEncendida)
