@@ -8,12 +8,20 @@ public class VoiceRecognizer : MonoBehaviour
 {
     // Campos necesarios para guardar las acciones accionadas por voz.
     KeywordRecognizer recognizer;
+    public NPCPositionsManager positionsManager;
     Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
 
     void Start()
     {
         //Declarando pares palabra - función reconocibles.
-        keywords.Add("Hola", ReconocerHola);
+        keywords.Add("Tortuga", CambiarATortuga);
+        keywords.Add("Fila", CambiarAFila);
+        keywords.Add("Juntos", CambiarAJuntos);
+        keywords.Add("Abrazo", CambiarAJuntos);
+        keywords.Add("Cuadrado", CambiarACuadrado);
+        keywords.Add("Deténganse", DetenerAliados);
+        keywords.Add("Alto", DetenerAliados);
+        keywords.Add("Paren", DetenerAliados);
 
         recognizer = new KeywordRecognizer(keywords.Keys.ToArray());
         recognizer.OnPhraseRecognized += KeywordRecognizer_OnPhraseRecognized;
@@ -39,9 +47,31 @@ public class VoiceRecognizer : MonoBehaviour
         }
     }
 
-    void ReconocerHola()
+    void CambiarATortuga()
     {
-        Debug.Log("Holaaa :D");
+        positionsManager.posicionActual = Posiciones.TORTUGA;
+        positionsManager.ActualizarPosicionesNPCs();
     }
+    void CambiarAFila()
+    {
+        positionsManager.posicionActual = Posiciones.FILA;
+        positionsManager.ActualizarPosicionesNPCs();
+    }
+    void CambiarAJuntos()
+    {
+        positionsManager.posicionActual = Posiciones.JUNTOS;
+        positionsManager.ActualizarPosicionesNPCs();
+    }
+    void CambiarACuadrado()
+    {
+        positionsManager.posicionActual = Posiciones.CUADRADO;
+        positionsManager.ActualizarPosicionesNPCs();
+    }
+    void DetenerAliados()
+    {
+        positionsManager.posicionActual = Posiciones.DETENERSE;
+        positionsManager.ActualizarPosicionesNPCs();
+    }
+
 
 }

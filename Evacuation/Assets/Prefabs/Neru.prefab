@@ -192,7 +192,6 @@ GameObject:
   - component: {fileID: 2832244293518662328}
   - component: {fileID: 2535429263668790731}
   - component: {fileID: 2722881788248788983}
-  - component: {fileID: 692861374095283382}
   m_Layer: 0
   m_Name: Neru
   m_TagString: Player
@@ -378,15 +377,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &692861374095283382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7860434312187819259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da4757ba5975de04a99d3ea7c3bb75e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
