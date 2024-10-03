@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    
     [SerializeField]
     private float speed = 5.0f;  // Velocidad máxima
 
@@ -14,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField]
     private Rigidbody2D rb;
+
+    private int posicionNPcs;
 
     private Vector2 movementInput;
     private Vector2 currentVelocity;
