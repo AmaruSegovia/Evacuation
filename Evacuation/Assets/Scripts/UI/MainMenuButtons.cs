@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // Lejos el peor código que alguna vez escribí
 public class MainMenuButtons : MonoBehaviour
@@ -20,7 +21,7 @@ public class MainMenuButtons : MonoBehaviour
             {
                 if(pantallaIntro == 4)
                 {
-
+                    SceneManager.LoadScene("Menu");
                 }
                 else
                 {
