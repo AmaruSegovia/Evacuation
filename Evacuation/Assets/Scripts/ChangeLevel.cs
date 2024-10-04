@@ -6,12 +6,13 @@ using UnityEngine.SceneManagement;
 public class ChangeLevel : MonoBehaviour
 {
     public string escenaACambiar;
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    void Update()
     {
-        if (collision.gameObject.CompareTag("Player"))
+
+        if (Input.GetKey(KeyCode.P)) // "Fire1" es el click izquierdo del mouse
         {
             SceneManager.LoadScene(escenaACambiar);
+            Debug.Log("Deberiua cambairse ");
         }
     }
 }
