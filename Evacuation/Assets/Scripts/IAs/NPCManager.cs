@@ -8,7 +8,29 @@ public class NPCManager : MonoBehaviour
 
     void Start()
     {
+        BuscarPositionManager();
         InstanciarNPCs();
+    }
+
+    void BuscarPositionManager()
+    {
+        // Busca el objeto con el tag "Player" en la escena
+        GameObject player = GameObject.FindWithTag("Player");
+
+        if (player != null)
+        {
+            // Busca el componente NPCPositionsManager en los hijos del Player
+            positionsManager = player.GetComponentInChildren<NPCPositionsManager>();
+
+            if (positionsManager == null)
+            {
+                Debug.LogError("NPCPositionsManager no se encontró en el jugador.");
+            }
+        }
+        else
+        {
+            Debug.LogError("No se encontró el jugador en la escena.");
+        }
     }
 
     void InstanciarNPCs()

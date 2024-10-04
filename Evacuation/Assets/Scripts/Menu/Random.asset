@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Random
   m_EditorClassIdentifier: 
   characterJugable: {fileID: 0}
-  imagen: {fileID: 1364332583, guid: 4ab7d4a7fe26fe0489f93dbcb7bc3df5, type: 3}
+  imagen: {fileID: 21300000, guid: 9f366f78203ff4e43b16902adc340462, type: 3}
   characterName: Random
   description: '- Aleatorio'

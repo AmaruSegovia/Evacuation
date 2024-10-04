@@ -68,7 +68,7 @@ public class NPCPositionsManager : MonoBehaviour
 
     void Update()
     {
-        // Ejemplo: Cambiar entre TORTUGA, FILA, JUNTOS, CUADRADO, DETENERSE
+        /* // Ejemplo: Cambiar entre TORTUGA, FILA, JUNTOS, CUADRADO, DETENERSE
         if (Input.GetKeyDown(KeyCode.T))
         {
             posicionActual = Posiciones.TORTUGA;
@@ -93,8 +93,11 @@ public class NPCPositionsManager : MonoBehaviour
         {
             posicionActual = Posiciones.DETENERSE;
             ActualizarPosicionesNPCs();
-        }
+        }*/
     }
+
+
+
 
     // Método para actualizar las posiciones de los NPCs según el enum Posiciones
     public void ActualizarPosicionesNPCs()

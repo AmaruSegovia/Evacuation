@@ -15,8 +15,4 @@ MonoBehaviour:
   characterJugable: {fileID: 5123431962611942578, guid: a2375c19eae26484396ab9db168ebbbe, type: 3}
   imagen: {fileID: 882196353, guid: ab6ddd7321c4ec345a07b316f39dca59, type: 3}
   characterName: Nachito
-  description: '- Dibujante
-
-    - Buen disparo
-
-    - CapiGod'
+  description: "- Dibujante\n- Buen disparo\n- Muerto de sue\xF1o"
