@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7877292411616493824}
   - component: {fileID: 2818482794126051017}
   - component: {fileID: -7325827881536865808}
+  - component: {fileID: -2106813177725618764}
   m_Layer: 0
   m_Name: IA Cristian
   m_TagString: Untagged
@@ -77,13 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb7a32aa02733ba46a124041be1da2c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcData: {fileID: 11400000, guid: d132575b8db48a44bafe9cc6400a5763, type: 2}
   numeroNPC: 0
-  offsets:
-  - {x: 0, y: 10, z: 0}
-  - {x: 0, y: -10, z: 0}
-  - {x: -10, y: 0, z: 0}
-  - {x: 10, y: 0, z: 0}
 --- !u!114 &7877292411616493824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,6 +162,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-2106813177725618764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4685089087015444984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2b98920a4217d469243385855d82d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifes: 100
+  maxLifes: 100
+  damage: 10
+  lifesText: {fileID: 0}
 --- !u!1 &7701553187331228113
 GameObject:
   m_ObjectHideFlags: 0

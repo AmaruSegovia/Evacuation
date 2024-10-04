@@ -29,7 +29,7 @@ public class NPCManager : MonoBehaviour
         // Iterar sobre la lista de NPCData y crear NPCs
         for (int i = 0; i < npcDataList.Count; i++)
         {
-            // Instanciar el prefab en la posición correspondiente
+            // Instanciar el prefab en la posiciï¿½n correspondiente
             GameObject npc = Instantiate(npcDataList[i].characterJugable, positionsManager.PosicionesNPC[i].position, Quaternion.identity);
             // Obtener el componente NPCIA y asignarle el ScriptableObject
             NPCIA npcIA = npc.GetComponent<NPCIA>();
