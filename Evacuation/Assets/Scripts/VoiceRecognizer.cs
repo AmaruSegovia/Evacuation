@@ -16,11 +16,12 @@ public class VoiceRecognizer : MonoBehaviour
         //Declarando pares palabra - función reconocibles.
         keywords.Add("Tortuga", CambiarATortuga);
         keywords.Add("Fila", CambiarAFila);
+        keywords.Add("Atras", CambiarAFila);
+        keywords.Add("Agrupense", CambiarAJuntos);
         keywords.Add("Juntos", CambiarAJuntos);
         keywords.Add("Abrazo", CambiarAJuntos);
         keywords.Add("Cuadrado", CambiarACuadrado);
         keywords.Add("Deténganse", DetenerAliados);
-        keywords.Add("Alto", DetenerAliados);
         keywords.Add("Paren", DetenerAliados);
 
         recognizer = new KeywordRecognizer(keywords.Keys.ToArray());

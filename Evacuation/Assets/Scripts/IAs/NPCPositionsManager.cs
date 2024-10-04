@@ -96,6 +96,9 @@ public class NPCPositionsManager : MonoBehaviour
         }*/
     }
 
+
+
+
     // Método para actualizar las posiciones de los NPCs según el enum Posiciones
     public void ActualizarPosicionesNPCs()
     {

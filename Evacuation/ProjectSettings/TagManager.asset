@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Jugador
   - PistolTransform
+  - EnemyZombie
   layers:
   - Default
   - TransparentFX
