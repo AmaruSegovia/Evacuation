@@ -73,7 +73,7 @@ public class NPCLifes : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         // Verifica si colisiona con el objeto llamado "Target Zombie"
-        if (collision.gameObject.CompareTag("Target Zombie"))
+        if (collision.gameObject.CompareTag("EnemyZombie"))
         {
             ChangeLifes(-damage);
         }

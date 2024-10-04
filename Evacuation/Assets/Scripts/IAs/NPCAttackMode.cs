@@ -17,6 +17,20 @@ public class NPCAttack : MonoBehaviour
     public float fuerzaEmpuje = 5f;    // Fuerza de empuje en el modo Empuje
 
     private Transform objetivo;
+    private Transform jugador;  // Referencia al jugador
+
+    private void Start()
+    {
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            jugador = player.transform;
+        }
+        else
+        {
+            Debug.LogError("No se encontró un objeto con el tag 'Player'");
+        }
+    }
     void Update()
     {
         switch (estadoActual)
@@ -66,15 +80,12 @@ public class NPCAttack : MonoBehaviour
         if (estadoActual == EstadoNPC.Empuje && colision.gameObject.CompareTag("EnemyZombie"))
         {
             Rigidbody2D rbEnemigo = colision.gameObject.GetComponent<Rigidbody2D>();
-            AIPath aiPathEnemigo = colision.gameObject.GetComponent<AIPath>();  // AI del enemigo
+            AIPath aiPathEnemigo = colision.gameObject.GetComponent<AIPath>();  // IA del enemigo
 
-            if (rbEnemigo != null)
+            if (rbEnemigo != null && jugador != null)
             {
-                // Calcula la dirección opuesta (del enemigo hacia afuera desde el NPC)
-                Vector2 direccionEmpuje = (colision.transform.position - transform.position).normalized;
-
-                // Invertir la dirección para que el empuje sea hacia afuera (alejando al enemigo)
-                Vector2 direccionContraria = -direccionEmpuje;
+                // Calcula la dirección desde el jugador hacia el zombie (para empujar en dirección opuesta al jugador)
+                Vector2 direccionEmpuje = (colision.transform.position - jugador.position).normalized;
 
                 // Desactivar temporalmente el movimiento de la IA del zombie
                 if (aiPathEnemigo != null)
@@ -82,11 +93,11 @@ public class NPCAttack : MonoBehaviour
                     aiPathEnemigo.enabled = false;
                 }
 
-                // Aplicar la fuerza de empuje hacia afuera
-                rbEnemigo.AddForce(direccionContraria * fuerzaEmpuje, ForceMode2D.Impulse);
+                // Aplicar la fuerza de empuje en la dirección opuesta al jugador
+                rbEnemigo.AddForce(direccionEmpuje * fuerzaEmpuje, ForceMode2D.Impulse);
 
                 Debug.Log("NPC empujó a: " + colision.gameObject.name);
-                
+
                 // Reactivar el movimiento de la IA del zombie después de un pequeño retraso
                 StartCoroutine(ReactivarMovimientoZombie(aiPathEnemigo));
             }
@@ -96,7 +107,7 @@ public class NPCAttack : MonoBehaviour
     // Coroutine para reactivar el movimiento de la IA del zombie después de un tiempo
     IEnumerator ReactivarMovimientoZombie(AIPath aiPathEnemigo)
     {
-        yield return new WaitForSeconds(1f);  // Espera 0.5 segundos para reactivar el movimiento del zombie
+        yield return new WaitForSeconds(0.5f);  // Espera 0.5 segundos para reactivar el movimiento del zombie
 
         if (aiPathEnemigo != null)
         {
