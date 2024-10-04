@@ -34391,8 +34391,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imagenBarraDeVida: {fileID: 1810033770}
-  "colorDeDa\xF1o": {r: 1, g: 0, b: 0, a: 1}
-  vidaMaxima: 100
+  "colorDeDa\xF1o": {r: 0.8207547, g: 0, b: 0.76847166, a: 0}
+  colorSaludable: {r: 0, g: 1, b: 0, a: 1}
+  colorMedio: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorBajo: {r: 1, g: 0, b: 0, a: 1}
+  vidaMaxima: 180
 --- !u!114 &2003740978
 MonoBehaviour:
   m_ObjectHideFlags: 0
